@@ -46,8 +46,8 @@ Postfix Expression:
     void Postfix(struct Node* head){
       if(head!=null){
         postfix(head->left);
-        printf("%d ",head->value);
         postfix(head->right);
+        printf("%d ",head->value);
       }
     }
 
